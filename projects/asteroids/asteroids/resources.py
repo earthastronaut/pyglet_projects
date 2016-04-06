@@ -24,7 +24,8 @@ def center_images(*images):
 
 player_image = pyglet.resource.image('player.png')
 bullet_image = pyglet.resource.image('bullet.png')
-bullet_sound_file = os.path.join(resources_path,'phew.wav')
+bullet_sound = pyglet.media.load(
+    os.path.join(resources_path,'phew.wav'), streaming=False)
 
 top_scores_filepath = os.path.join(resources_path, 'top_scores.txt')
 

@@ -79,9 +79,8 @@ class Player(PhysicalObject):
         super(Player, self).delete()
       
     def fire(self):
-        # from subprocess import Popen
-        # Popen(["afplay",resources.bullet_sound_file])
-
+        # resources.bullet_sound.play()
+        
         angle_radians = -math.radians(self.rotation)
 
         ship_radius = self.image.width/2
