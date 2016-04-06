@@ -16,3 +16,4 @@ These are projects which started with code in ``pyglet_projects`` and then grew 
 These projects use pyglet but are not directly related to ``pyglet_projects``. 
 
 * [minecraft](https://github.com/boskee/Minecraft) and checkout the [associated talk](http://www.slideshare.net/rdonkin/minecraft-in-500-lines-with-pyglet-pycon-uk)
+* [beginners pyglet how to](http://simeonfranklin.com/blog/2014/aug/21/python-beginners-pyglet/)

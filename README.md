@@ -1,6 +1,6 @@
 # Pyglet Projects
 
-[Pyglet](https://bitbucket.org/pyglet/pyglet/wiki/Home) is a fun python interface for creating iteractive games. The purpose of pyglet_projects is to provide examples of pyglet games for teaching and fun.
+[Pyglet](https://bitbucket.org/pyglet/pyglet/wiki/Home) is a fun python interface for creating iteractive games. The purpose of pyglet_projects is to provide pyglet game examples for teaching and fun.
 
 
 ## Getting Started
