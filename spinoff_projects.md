@@ -8,8 +8,10 @@ This repo was design to be a starting point for pyglet projects. Each directory 
 These are projects which started with code in ``pyglet_projects`` and then grew to be __AMAZING!__
 
 * [snake]()
+* [asteroids (original)](https://github.com/loktacar/pyglet-asteroids) - the version in `pyglet_projects` is based on this work. There's also a great [tutorial](http://steveasleep.com/pyglettutorial.html)
 
 
 ## Secondary Project Spinoffs
 
 These projects use pyglet but are not directly related to ``pyglet_projects``. 
+
