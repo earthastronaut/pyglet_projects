@@ -24,10 +24,9 @@ from pyglet.window import key
 import pyglet
 
 
-
-FPS = 3 # frames per second (aka speed of the game)
-WINDOW_BLOCK_WIDTH = 20 # number of blocks (aka size of the screen)
-BLOCK_WIDTH = 20 # size of squares in pixels
+FPS = 10 # frames per second (aka speed of the game)
+WINDOW_BLOCK_WIDTH = 15 # number of blocks (aka size of the screen)
+BLOCK_WIDTH = 50 # size of squares in pixels
 FOOD_SCORE = 5 # points by food
 
 # direction vectors
@@ -222,16 +221,16 @@ def on_draw():
         food_xywh = get_block_xywh(food['pos'])
         draw_rectangle(food_xywh, food['color'])
 
+    obstacles = objects['obstacles']
+    for block_pos in obstacles['pos']:
+        block_xywh = get_block_xywh(block_pos)
+        draw_rectangle(block_xywh, obstacles['color'])
+
     snake = objects['snake']
     print("snake positions = {}".format(objects['snake']['pos']))
     for block_pos in snake['pos']:
         block_xywh = get_block_xywh(block_pos)
         draw_rectangle(block_xywh, snake['color'])
-
-    obstacles = objects['obstacles']
-    for block_pos in obstacles['pos']:
-        block_xywh = get_block_xywh(block_pos)
-        draw_rectangle(block_xywh, obstacles['color'])
 
     render_text("Score : {}".format(score))
     if not game_is_active:
@@ -300,20 +299,24 @@ def update_game(dt):
     collide_with_self = head_pos in snake_pos
     collide_with_obstacle = head_pos in obstacles_pos
 
+    # move the snake
     snake_pos.insert(0, head_pos)
+    tail_pos = snake_pos.pop(-1)
 
     if collide_with_obstacle or collide_with_self:
         print('collided with something!')       
         stop_game()
+        return
 
     elif head_pos == food_pos:
         print('snake found food in position={}'.format(food_pos))
         score += FOOD_SCORE
         food_pos = None
+        snake_pos.append(tail_pos)
 
     else:
         print('snake update position')
-        snake_pos.pop(-1)
+
 
     food_pos = get_food_position(
         food_pos=food_pos, occupied_positions=occupied_pos)
