@@ -1,0 +1,48 @@
+# Pyglet Projects
+
+[Pyglet](https://bitbucket.org/pyglet/pyglet/wiki/Home) is a fun python interface for creating iteractive games. The purpose of pyglet_projects is to provide examples of pyglet games for teaching and fun.
+
+## Getting Started
+
+To get started you'll need python and pyglet. Probably the easiest way to get these requirements is to:
+
+1. [install python](https://wiki.python.org/moin/BeginnersGuide/Download)
+1. [install pip](https://pip.pypa.io/en/stable/installing/)
+1. (optional) you may want to install [virtualenv](http://docs.python-guide.org/en/latest/dev/virtualenvs/) and install these within a virtual environment. Make sure you use python 3
+1. download this repo using either `git clone` or the download zip button above
+1. run `pip install -r requirements_py3.txt`
+
+Now you're ready to dive in. 
+
+_Note: python3 is suggested but not necessarily required. Some of the projects may work with python2._ 
+
+
+## Pyglet Project Organization
+
+This repo is organizes into directories for each example nested within the `projects` folder.
+
+    |- pyglet_projects/
+        |- README.md
+        |- requirements_py3.txt
+        |- spinoff_projects.md
+        |- projects/
+            |- mind_sweeper_with_functions/
+                |- README.md
+                |- run.py
+                |- ... 
+            |- snake_with_functions/
+                |- README.md
+                |- run.py
+                |- ... 
+            |- ... 
+
+
+You should be able to go to any directory (sub-project) and run `python3 run.py` to start the game. 
+
+I created a single repo for all these projects so it'd be easy for someone to download and try out a bunch of pyglet games. 
+
+Each project could concevable be it's on repo. I encourage you to start your own git repo, copy the project code over as a starting point, and modify to your hearts content. If you do, please add a link to `spinoff_projects.md` and make a pull request. Share the fun!
+
+## Explorative Learning
+
+
