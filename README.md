@@ -27,14 +27,13 @@ This repo is organizes into directories for each example nested within the `proj
 
     |- pyglet_projects/
         |- README.md
-        |- requirements_py3.txt
         |- spinoff_projects.md
         |- projects/
-            |- mind_sweeper_with_functions/
+            |- mind_sweeper_basic/
                 |- README.md
                 |- run.py
                 |- ... 
-            |- snake_with_functions/
+            |- snake_with_basic/
                 |- README.md
                 |- run.py
                 |- ... 
