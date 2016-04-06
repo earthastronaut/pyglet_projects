@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!env python
 import pyglet 
 
 from asteroids import game 
