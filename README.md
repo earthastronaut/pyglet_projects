@@ -11,7 +11,10 @@ To get started you'll need python and pyglet. Probably the easiest way to get th
 1. [install pip](https://pip.pypa.io/en/stable/installing/)
 1. (optional) you may want to install [virtualenv](http://docs.python-guide.org/en/latest/dev/virtualenvs/) and install these within a virtual environment. Make sure you use python 3
 1. download this repo using either `git clone` or the download zip button above
-1. run `pip install -r requirements_py3.txt`
+1. install `pyglet`
+    1. [how to install pyglet for python3](http://stackoverflow.com/questions/21298834/how-to-get-pyglet-working-for-python-3)
+    1. [pyglet home](https://bitbucket.org/pyglet/pyglet/wiki/Home)
+    1. [pyglet install docs](http://pyglet.readthedocs.org/en/latest/programming_guide/installation.html)
 
 Now you're ready to dive in. 
 
@@ -58,3 +61,13 @@ Here are some general steps:
 1. modify the source code and run it again. 
 1. go crazy, make modifications, and re-run it 
     1. some good modifications are things like changing colors, object shapes, and control keys/buttons
+
+
+## Contributing
+
+Open source rocks! If you have an project idea to add to `pyglet_projects`
+ create a pull request! Projects must: 
+
+1. run with `python3 run.py`
+1. follow [pep8](http://pep8.org/)
+ 
