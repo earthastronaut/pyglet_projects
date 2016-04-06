@@ -2,6 +2,7 @@
 
 [Pyglet](https://bitbucket.org/pyglet/pyglet/wiki/Home) is a fun python interface for creating iteractive games. The purpose of pyglet_projects is to provide examples of pyglet games for teaching and fun.
 
+
 ## Getting Started
 
 To get started you'll need python and pyglet. Probably the easiest way to get these requirements is to:
@@ -43,6 +44,17 @@ I created a single repo for all these projects so it'd be easy for someone to do
 
 Each project could concevable be it's on repo. I encourage you to start your own git repo, copy the project code over as a starting point, and modify to your hearts content. If you do, please add a link to `spinoff_projects.md` and make a pull request. Share the fun!
 
+
 ## Explorative Learning
 
+One goal of `pyglet_projects` is to be a learning tool for beginning developers. The projects have varying levels entry (e.g. some require knowledge of object oriented programming others do not). Because of this some projects have repeated implementations. 
 
+Courses often start teaching programming from the ground up with variables, control statements, and so on. I fully endorse this method. However, I know when I began programming some of the most valuable learning was from exploring existing projects. 
+
+Here are some general steps:
+
+1. start up a project and see how it works (these projects start with `python3 run.py`)
+1. get a text editor (like [Sublime Text](https://www.sublimetext.com/)) and open up the source code for the projects.
+1. modify the source code and run it again. 
+1. go crazy, make modifications, and re-run it 
+    1. some good modifications are things like changing colors, object shapes, and control keys/buttons
