@@ -1,0 +1,35 @@
+*_local.py
+.venv
+
+### Python ###
+__pycache__
+*pyc
+.coverage
+
+### Editor/IDE Files ###
+*.vim
+*~
+*.iml
+*.ipr
+*.iws
+.idea/
+.idea
+*.tmproj
+*.tmproject
+tmtags
+.*.sw[a-z]
+*.un~
+Session.vim
+.codeintel
+.project
+.pydevproject
+*.sublime-project
+*.sublime-workspace
+
+### OSX Files ###
+.DS_Store
+.Spotlight-V100
+.Trashes
+plist
+.apdisk
+
