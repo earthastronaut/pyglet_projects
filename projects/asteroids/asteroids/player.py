@@ -10,7 +10,9 @@ from asteroids.asteroid import Asteroid
 from asteroids.bullet import Bullet
 
 
-def clip (x,a,b):
+def clip(x, a, b):
+    """ clips the value x to be between a and b
+    """
     if x < a:
         return a
     elif x >= b:
