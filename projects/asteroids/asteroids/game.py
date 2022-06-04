@@ -1,7 +1,7 @@
 import os
 
 import pyglet
-from pyglet.window import key
+from pyglet.window import key, FPSDisplay
 
 from asteroids import resources, load, utils
 from asteroids.player import Player
@@ -28,7 +28,7 @@ class AsteroidsWindow(pyglet.window.Window):
         self.level = 1
         self.score = 0
 
-        self.fps_display = pyglet.clock.ClockDisplay()
+        self.fps_display = FPSDisplay(self)
         self.show_fps = False
 
         self.main_menu_batch = pyglet.graphics.Batch()
